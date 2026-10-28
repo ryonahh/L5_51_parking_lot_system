@@ -4,11 +4,16 @@ import os
 import secrets
 
 parking_slots = {
-    "P01": {"plate": "KA01AB1234", "hours": 2, "rate": 20.0, "is_occupied": True},
-    "P02": {"plate": "TN07CD5678", "hours": 0, "rate": 20.0, "is_occupied": False},
-    "P03": {"plate": "MH02EF9012", "hours": 4, "rate": 30.0, "is_occupied": True},
+    "P01": {
+        "plate": "KA01AB1234", "hours": 2, "rate": 20.0, "is_occupied": True
+    },
+    "P02": {
+        "plate": "TN07CD5678", "hours": 0, "rate": 20.0, "is_occupied": False
+    },
+    "P03": {
+        "plate": "MH02EF9012", "hours": 4, "rate": 30.0, "is_occupied": True
+    },
 }
-
 # A dict instead of a bare float, so functions can update it without `global`
 COLLECTIONS = {"total": 0.0}
 
